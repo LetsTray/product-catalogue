@@ -1,4 +1,4 @@
-<script>
+<script setup>
 defineProps({
   id: Number,
   name: String,
@@ -18,7 +18,7 @@ defineProps({
     </div>
 
     <button class="add-to-cart">Add To Cart</button>
-    <a href="">See details</a>
+    <router-link to="`/product/${id}`">See details</router-link>
   </div>
 </template>
 <style>

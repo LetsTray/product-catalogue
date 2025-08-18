@@ -1,33 +1,48 @@
-<script setup>
-import Dropdown from "primevue/dropdown";
+<script>
+import product from "../data/product.json";
 
-defineProps({
+/*defineProps({
   name: String,
   description: String,
   category: String,
   price: Number,
   image: String,
-});
+});*/
+
+export default {
+  props: ["id"],
+  data() {
+    return {
+      product: null,
+    };
+  },
+  mounted() {
+    this.product = product.finds((product) => product.id == this.id);
+  },
+};
 </script>
 <template>
-  <div class="content">
-    <img src="../assets/asset3.jpeg" />
+  <div v-if="product" class="content">
+    <img :src="image" alt="product image" />
     <div class="content-body">
-      <h1>LOREM IPSUM</h1>
-      <p class="product-price">$<span id="price">139.99 </span></p>
-      <p class="content-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, esse.
-        Perferendis nemo ea quod aliquam illo cupiditate odio vero, placeat
-        possimus libero minima vel quae eveniet dolores quisquam adipisci
-        voluptas!
+      <h1>{{ product.name }}</h1>
+      <p class="product-price">
+        $<span id="price">{{ product.price }} </span>
       </p>
-      <div class="content-detail">
-        <h3>Size</h3>
-        <!-- <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" class="w-full md:w-14rem" />-->
-      </div>
-      <Button> Add To Cart </Button>
+      <p class="content-description">
+        {{ product.description }}
+      </p>
+      <button class="add-to-cart">Add To Cart</button>
     </div>
   </div>
+
+  <!--<div>
+      <div class="content-detail">
+        <h3>Size</h3>
+         <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" class="w-full md:w-14rem" />
+      </div>
+    </div>
+  </div>-->
 </template>
 <style>
 .content {
@@ -56,7 +71,7 @@ img {
   font-size: 1rem;
 }
 
-Button {
+button.add-to-cart {
   background-color: black;
   color: white;
   font-family: "Poppins";
