@@ -3,6 +3,7 @@ import ProductCard from "@/components/ProductCard.vue";
 import product from "@/data/product.json";
 
 export default {
+  components: { ProductCard },
   data() {
     return {
       products: product,
