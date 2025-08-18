@@ -16,14 +16,20 @@ export default {
       product: null,
     };
   },
+  methods: {
+    getImageURL(image) {
+      return new URL(`../assets/${image}`, import.meta.url).href;
+    },
+  },
   mounted() {
-    this.product = product.finds((product) => product.id == this.id);
+    const numericId = Number(this.id);
+    this.product = product.find((p) => p.id === numericId);
   },
 };
 </script>
 <template>
   <div v-if="product" class="content">
-    <img :src="image" alt="product image" />
+    <img :src="getImageURL(product.image)" alt="product image" />
     <div class="content-body">
       <h1>{{ product.name }}</h1>
       <p class="product-price">

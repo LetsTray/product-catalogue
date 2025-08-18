@@ -18,7 +18,7 @@ defineProps({
     </div>
 
     <button class="add-to-cart">Add To Cart</button>
-    <router-link to="`/product/${id}`">See details</router-link>
+    <router-link :to="`/product/${id}`">See details</router-link>
   </div>
 </template>
 <style>
