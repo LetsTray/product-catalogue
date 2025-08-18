@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Running Shoes",
+    "description": "Lightweight running shoes with breathable mesh and cushioned soles, ideal for daily jogs or casual wear.",
+    "category": "Running",
+    "price": 89.99,
+    "image": "asset1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Urban Sneakers",
+    "description": "Stylish sneakers with a sleek design and durable rubber soles, perfect for urban adventures.",
+    "category": "Casual",
+    "price": 79.5,
+    "image": "asset2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Hiking Boots",
+    "description": "Rugged waterproof hiking boots with excellent grip, designed for tough outdoor trails.",
+    "category": "Outdoor",
+    "price": 129.99,
+    "image": "asset3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Formal Leather Shoes",
+    "description": "Elegant leather shoes with a polished finish, suitable for business meetings or formal events.",
+    "category": "Formal",
+    "price": 149.0,
+    "image": "asset4.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Basketball High-Tops",
+    "description": "High-performance basketball shoes with ankle support and shock-absorbing soles for intense games.",
+    "category": "Sports",
+    "price": 109.95,
+    "image": "asset5.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Skateboarding Sneakers",
+    "description": "Durable sneakers with reinforced toes and grippy soles, designed for skateboarding and street style.",
+    "category": "Skate",
+    "price": 69.99,
+    "image": "asset6.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Trail Running Shoes",
+    "description": "Versatile trail runners with enhanced traction and lightweight build for off-road adventures.",
+    "category": "Running",
+    "price": 99.9,
+    "image": "asset7.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "High-Top Sneakers",
+    "description": "Classic high-top sneakers with durable canvas and cushioned soles, perfect for casual everyday wear.",
+    "category": "Casual",
+    "price": 79.99,
+    "image": "asset8.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Lightweight Trainers",
+    "description": "Breathable trainers designed with mesh upper and flexible sole for maximum comfort during workouts.",
+    "category": "Training",
+    "price": 84.5,
+    "image": "asset9.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Leather Sneakers",
+    "description": "Premium leather sneakers that combine timeless style with modern comfort, suitable for both work and leisure.",
+    "category": "Lifestyle",
+    "price": 119.0,
+    "image": "asset10.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Slip-On Sneakers",
+    "description": "Convenient slip-on sneakers with stretch-fit design and cushioned insole, ideal for quick outings.",
+    "category": "Casual",
+    "price": 65.75,
+    "image": "asset11.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Performance Basketball Shoes",
+    "description": "High-performance basketball shoes with ankle support and responsive cushioning for explosive moves.",
+    "category": "Basketball",
+    "price": 139.99,
+    "image": "asset12.jpeg"
+  }
+]
