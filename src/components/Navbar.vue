@@ -7,7 +7,6 @@
     <!--<router-link to="/product">Product Detail</router-link>|-->
     <router-link class="cart" to="/cart">Cart</router-link>
   </nav>
-  <router-view />
 </template>
 <style>
 nav {
