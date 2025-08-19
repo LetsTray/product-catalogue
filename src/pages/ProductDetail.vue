@@ -29,7 +29,7 @@ export default {
         {{ product.description }}
       </p>
       <p class="product-price">
-        $<span id="price">{{ product.price }} </span>
+        $<span class="price">{{ product.price }}</span>
       </p>
 
       <button class="add-to-cart">Add To Cart</button>
