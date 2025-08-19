@@ -40,8 +40,9 @@ export default {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: stretch;
-  gap: 1.3rem 1rem;
+  gap: 3.5rem 1rem;
+  margin: 2rem;
 }
 </style>
