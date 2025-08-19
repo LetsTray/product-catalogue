@@ -25,12 +25,12 @@ defineProps({
 .card {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 22rem;
   padding: 1.5rem;
   background-color: white;
   border-radius: 25px;
   text-align: center;
-  gap: 0.5rem;
+  gap: 1rem;
   border: 2px solid black;
 }
 

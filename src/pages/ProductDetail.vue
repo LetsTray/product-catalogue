@@ -52,10 +52,11 @@ export default {
 .content-body {
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
 }
 
 .content img {
-  width: 45%;
+  width: 43%;
   height: auto;
 }
 

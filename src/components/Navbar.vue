@@ -14,19 +14,21 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
   font-weight: 700;
   font-size: larger;
   position: sticky;
+  background-color: black;
+  font-size: 1.5rem;
 }
 
 .product-catalogue {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .cart {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 </style>
