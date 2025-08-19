@@ -13,6 +13,9 @@ export default {
     getImageURL(image) {
       return new URL(`../assets/${image}`, import.meta.url).href;
     },
+    onShowCart(data) {
+      console.log("showCart:", data);
+    },
   },
   mounted() {
     if (!this.products.length) {
@@ -31,6 +34,7 @@ export default {
       :name="item.name"
       :price="item.price"
       :image="getImageURL(item.image)"
+      @showCart="onShowCart"
     />
   </div>
 </template>
