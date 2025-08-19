@@ -28,8 +28,8 @@ export default {
       <p class="content-description">
         {{ product.description }}
       </p>
-      <p class="product-price">
-        $<span id="price">{{ product.price }} </span>
+      <p class="content-price">
+        $<span>{{ product.price }}</span>
       </p>
 
       <button class="add-to-cart">Add To Cart</button>
@@ -53,12 +53,13 @@ export default {
   display: flex;
   flex-direction: column;
 }
-img {
+
+.content img {
   width: 45%;
   height: auto;
 }
 
-.product-price {
+.content-price {
   font-size: 1.2rem;
   font-weight: 500;
 }

@@ -10,10 +10,10 @@ defineProps({
 <template>
   <div class="card">
     <img :src="image" alt="product image" />
-    <div class="product-content">
-      <h1 class="product-name">{{ name }}</h1>
-      <p class="product-price">
-        $<span id="price">{{ price }} </span>
+    <div class="card-content">
+      <h1 class="card-name">{{ name }}</h1>
+      <p class="card-price">
+        $<span>{{ price }}</span>
       </p>
     </div>
 
@@ -39,20 +39,20 @@ defineProps({
   height: auto;
 }
 
-.product-content {
+.card-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.product-name {
+.card-name {
   font-size: 1.2rem;
   font-weight: 800;
   text-align: left;
 }
 
-#price {
+.card-price {
   font-size: 1.1rem;
   font-weight: 500;
 }
