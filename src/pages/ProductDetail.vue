@@ -1,14 +1,6 @@
 <script>
 import product from "../data/product.json";
 
-/*defineProps({
-  name: String,
-  description: String,
-  category: String,
-  price: Number,
-  image: String,
-});*/
-
 export default {
   props: ["id"],
   data() {
