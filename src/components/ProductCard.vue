@@ -13,7 +13,7 @@ defineProps({
     <div class="product-content">
       <h1 class="product-name">{{ name }}</h1>
       <p class="product-price">
-        $<span id="price">{{ price }} </span>
+        $<span class="price">{{ price }}</span>
       </p>
     </div>
 
@@ -52,7 +52,7 @@ defineProps({
   text-align: left;
 }
 
-#price {
+.price {
   font-size: 1.1rem;
   font-weight: 500;
 }

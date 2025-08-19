@@ -6,7 +6,7 @@
         <img src="../assets/asset12.jpeg" />
         <p>Performance Basketball Shoes</p>
       </div>
-      <p class="cart-price">$<span id="price">133.99</span></p>
+      <p class="cart-price">$<span class="price">133.99</span></p>
       <button class="delete-product">X</button>
     </div>
     <div class="cart-card">
@@ -14,7 +14,7 @@
         <img src="../assets/asset12.jpeg" />
         <p>Performance Basketball Shoes</p>
       </div>
-      <p class="cart-price">$<span id="price">133.99</span></p>
+      <p class="cart-price">$<span class="price">133.99</span></p>
       <button class="delete-product">X</button>
     </div>
   </div>
