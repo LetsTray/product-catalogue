@@ -68,14 +68,14 @@ button.add-to-cart {
 </style>-->
 
 <script>
-defineProps({
-  id: Number,
-  name: String,
-  price: Number,
-  image: String,
-});
-
 export default {
+  props: {
+    id: Number,
+    name: String,
+    price: Number,
+    image: String,
+  },
+  emits: ["showCart"],
   methods: {
     toCart() {
       this.$emit("showCart", "Hello, World!");
