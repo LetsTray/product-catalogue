@@ -12,6 +12,9 @@ export default {
     getImageURL(image) {
       return new URL(`../assets/${image}`, import.meta.url).href;
     },
+    tambah() {
+      this.$emit("add-to-cart", this.product);
+    },
   },
   mounted() {
     //this.product = product.finds((product) => product.id == this.id);
@@ -21,6 +24,7 @@ export default {
 };
 </script>
 <template>
+  <p>CHILD</p>
   <div v-if="product" class="content">
     <img :src="getImageURL(product.image)" alt="product image" />
     <div class="content-body">
@@ -32,7 +36,7 @@ export default {
         $<span>{{ product.price }}</span>
       </p>
 
-      <button class="add-to-cart" @click="">Add To Cart</button>
+      <button class="add-to-cart" @click="tambah">Add To Cart</button>
     </div>
   </div>
 </template>

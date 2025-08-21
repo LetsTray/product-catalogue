@@ -1,6 +1,5 @@
 <script>
 export default {
-  props: ["id", "name", "price", "image"],
   
   methods: {
     getImageURL(image) {
@@ -13,9 +12,9 @@ export default {
   <div class="cart-card">
     <div class="cart-info">
       <img :src="getImageURL(image)" alt="product image" />
-      <p class="cart-name">{{ name }}</p>
+      <p class="cart-name"></p>
     </div>
-    <p class="cart-price">$<span>{{ price }}</span></p>
+    <p class="cart-price">$<span></span></p>
     <button class="delete-product">X</button>
   </div>
 </template>

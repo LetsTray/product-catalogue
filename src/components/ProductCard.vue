@@ -19,13 +19,10 @@ export default {
       </p>
     </div>
 
-    <button
-      class="add-to-cart"
-      @click="$emit('add-to-cart', { id, name, price, image })"
+    <!--<button class="add-to-cart">Add To Cart</button>-->
+    <router-link class="routerlink" :to="`/product/${id}`"
+      >See details</router-link
     >
-      Add To Cart
-    </button>
-    <router-link :to="`/product/${id}`">See details</router-link>
   </div>
 </template>
 <style scoped>
@@ -64,12 +61,21 @@ export default {
   font-weight: 500;
 }
 
-button.add-to-cart {
+.routerlink {
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+/*button.add-to-cart {
   background-color: black;
   color: white;
   font-family: "Poppins";
   font-size: 1rem;
   font-weight: 600;
   padding: 0.5rem;
-}
+}*/
 </style>

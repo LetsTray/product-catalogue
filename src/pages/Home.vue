@@ -41,7 +41,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  gap: 3.5rem 1rem;
+  gap: 3rem 2rem;
   margin: 2rem;
   place-content: center;
 }

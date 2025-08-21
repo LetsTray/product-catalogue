@@ -1,35 +1,24 @@
 <script>
 import CartCard from "@/components/CartCard.vue";
-import ProductCard from "@/components/ProductCard.vue";
-import product from "../data/product.json";
 
 export default {
-  components: { ProductCard, CartCard },
+  components: { CartCard },
   data() {
     return {
-      product,
       cart: [],
     };
   },
   methods: {
-    tambahKeCart(product) {
+    tambahkeCart(product) {
       this.cart.push(product);
     },
   },
 };
 </script>
 <template>
+  <p>PARENT (MENAMPUNG PRODUCT YANG DI ADD)</p>
   <div class="cart-list">
-    <CartCard
-      v-for="(item, index) in cart"
-      :key="index"
-      :id="item.id"
-      :name="item.name"
-      :price="item.price"
-      :image="item.image"
-      @add-to-cart="tambahKeCart"
-      :product="item"
-    />
+    <CartCard @add-to-cart="tambahkeCart" />
   </div>
 </template>
 <style scoped>
