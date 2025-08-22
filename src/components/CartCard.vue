@@ -1,5 +1,25 @@
-<script></script>
-<template></template>
+<script>
+export default {
+  props: {
+    product: Object,
+  }
+}
+</script>
+<template>
+  <div
+    class="flex flex-row justify-between flex-wrap items-center border-2 border-black rounded-2xl p-6"
+  >
+    <div class="flex items-center gap-16">
+      <p class="text-xl font-semibold">{{ product.name }}</p>
+    </div>
+    <p class="text-lg font-medium">$<span>{{ product.price }}</span></p>
+    <button
+      class="font-medium bg-red-600 text-white border-2 rounded-2xl px-5 py-2"
+    >
+      X
+    </button>
+  </div>
+</template>
 
 <!--<script>
 export default {

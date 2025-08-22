@@ -15,95 +15,15 @@ export default {
     <img :src="image" alt="product image" />
     <div class="flex flex-row items-center justify-between">
       <h1 class="text-xl font-extrabold text-left">{{ name }}</h1>
-      <p class="font-medium text-xl">
+      <p class="font-medium text-lg">
         $<span>{{ price }}</span>
       </p>
     </div>
-    <button class=" bg-black text-white font-medium p-2">Add To Cart</button>
-    <router-link class=" decoration-0 text-base text-black font-semibold " :to="`/product/${id}`"
+    <button class="bg-black text-white font-medium p-2" @click="$emit('add-to-cart', product)">Add To Cart</button>
+    <router-link
+      class="decoration-0 text-base text-black font-semibold"
+      :to="`/product/${id}`"
       >See details</router-link
     >
   </div>
 </template>
-
-<!--<script>
-export default {
-  props: {
-    id: Number,
-    name: String,
-    price: Number,
-    image: String,
-  },
-};
-</script>
-
-<template>
-  <div class="card">
-    <img :src="image" alt="product image" />
-    <div class="card-content">
-      <h1 class="card-name">{{ name }}</h1>
-      <p class="card-price">
-        $<span>{{ price }}</span>
-      </p>
-    </div>
-
-    <button class="add-to-cart">Add To Cart</button>
-    <router-link class="routerlink" :to="`/product/${id}`"
-      >See details</router-link
-    >
-  </div>
-</template>
-<style scoped>
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 22rem;
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 25px;
-  text-align: center;
-  gap: 1rem;
-  border: 2px solid black;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-name {
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-align: left;
-}
-
-.card-price {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.routerlink {
-  text-decoration: none;
-  font-size: 1rem;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-  padding: 0.5rem;
-}
-
-/*button.add-to-cart {
-  background-color: black;
-  color: white;
-  font-family: "Poppins";
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.5rem;
-}*/
-</style>-->

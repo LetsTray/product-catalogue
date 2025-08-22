@@ -28,6 +28,7 @@ export default {
       :name="item.name"
       :price="item.price"
       :image="getImageURL(item.image)"
+      @add-to-cart="$emit('add-to-cart', $event)"
     />
   </div>
 </template>
