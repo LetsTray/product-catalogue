@@ -1,7 +1,11 @@
 <script>
 export default {
   props: {
-    product: Object,
+    product: {
+      type: Object,
+      required: true,
+      validator: (p) => p && 'name' in p && 'price' in p,
+    },
   }
 }
 </script>

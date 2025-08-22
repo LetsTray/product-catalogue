@@ -1,10 +1,11 @@
 <script>
 export default {
+  emits: ['add-to-cart'],
   props: {
-    id: Number,
-    name: String,
-    price: Number,
-    image: String,
+    id: { type: Number, required: true },
+    name: { type: String, required: true },
+    price: { type: Number, required: true },
+    image: { type: String, required: true },
   },
 };
 </script>
@@ -19,7 +20,7 @@ export default {
         $<span>{{ price }}</span>
       </p>
     </div>
-    <button class="bg-black text-white font-medium p-2" @click="$emit('add-to-cart', product)">Add To Cart</button>
+    <button class="bg-black text-white font-medium p-2" @click="$emit('add-to-cart', { id, name, price, image })">Add To Cart</button>
     <router-link
       class="decoration-0 text-base text-black font-semibold"
       :to="`/product/${id}`"

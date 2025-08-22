@@ -4,6 +4,7 @@ import product from "../data/product.json";
 
 export default {
   components: { ProductCard },
+  emits: ['add-to-cart'],
   data() {
     return {
       products: product,
