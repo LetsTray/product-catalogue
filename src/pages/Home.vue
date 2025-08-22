@@ -1,6 +1,6 @@
 <script>
 import ProductCard from "@/components/ProductCard.vue";
-import product from "@/data/product.json";
+import product from "../data/product.json";
 
 export default {
   components: { ProductCard },
@@ -19,7 +19,7 @@ export default {
 <template>
   <div
     v-if="products.length"
-    class="flex flex-wrap justify-between items-stretch gap-x-12 gap-y-8 content-center"
+    class="flex flex-wrap justify-evenly items-stretch gap-x-4 gap-y-8 content-center my-9"
   >
     <ProductCard
       v-for="item in products"
