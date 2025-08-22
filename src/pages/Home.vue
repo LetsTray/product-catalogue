@@ -1,6 +1,7 @@
 <script>
 import ProductCard from "@/components/ProductCard.vue";
 import product from "../data/product.json";
+import { cartStore } from "@/store/cart.js";
 
 export default {
   components: { ProductCard },
@@ -12,6 +13,9 @@ export default {
   methods: {
     getImageURL(image) {
       return new URL(`../assets/${image}`, import.meta.url).href;
+    },
+    addToCart(product) {
+      cartStore.addItem(product);
     },
   },
 };
@@ -28,7 +32,7 @@ export default {
       :name="item.name"
       :price="item.price"
       :image="getImageURL(item.image)"
-      @add-to-cart="$emit('add-to-cart', $event)"
+      @add-to-cart="addToCart"
     />
   </div>
 </template>
