@@ -14,16 +14,13 @@ export default {
       return new URL(`../assets/${image}`, import.meta.url).href;
     },
   },
-  mounted() {
-    if (!this.products.length) {
-      console.error("Products data is empty.");
-    }
-  },
 };
 </script>
-
 <template>
-  <div v-if="products.length" class="list">
+  <div
+    v-if="products.length"
+    class="flex flex-wrap justify-between items-stretch gap-x-12 gap-y-8 content-center"
+  >
     <ProductCard
       v-for="item in products"
       :key="item.id"
@@ -34,15 +31,3 @@ export default {
     />
   </div>
 </template>
-
-<style scoped>
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 3rem 2rem;
-  margin: 2rem;
-  place-content: center;
-}
-</style>

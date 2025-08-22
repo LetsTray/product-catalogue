@@ -1,4 +1,7 @@
-<script>
+<script></script>
+<template></template>
+
+<!--<script>
 export default {
   
   methods: {
@@ -55,4 +58,4 @@ button.delete-product {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
-</style>
+</style>-->

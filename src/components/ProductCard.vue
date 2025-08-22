@@ -8,6 +8,30 @@ export default {
   },
 };
 </script>
+<template>
+  <div
+    class="flex flex-col w-96 p-6 bg-white rounded-3xl text-center gap-4 border-2 border-black"
+  >
+    <img :src="image" alt="product image" />
+    <div class="flex flex-row items-center justify-between">
+      <h1 class="text-2xl font-extrabold text-left">{{ name }}</h1>
+      <p class="font-medium text-2xl">
+        $<span>{{ price }}</span>
+      </p>
+    </div>
+  </div>
+</template>
+
+<!--<script>
+export default {
+  props: {
+    id: Number,
+    name: String,
+    price: Number,
+    image: String,
+  },
+};
+</script>
 
 <template>
   <div class="card">
@@ -19,7 +43,7 @@ export default {
       </p>
     </div>
 
-    <!--<button class="add-to-cart">Add To Cart</button>-->
+    <button class="add-to-cart">Add To Cart</button>
     <router-link class="routerlink" :to="`/product/${id}`"
       >See details</router-link
     >
@@ -78,4 +102,4 @@ export default {
   font-weight: 600;
   padding: 0.5rem;
 }*/
-</style>
+</style>-->

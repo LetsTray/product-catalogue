@@ -1,4 +1,8 @@
-<script>
+<script></script>
+<template></template>
+
+
+<!--<script>
 import CartCard from "@/components/CartCard.vue";
 
 export default {
@@ -27,7 +31,7 @@ export default {
 }
 </style>
 
-<!--<script>
+<script>
 import CartCard from "@/components/CartCard.vue";
 import product from "../data/product.json";
 

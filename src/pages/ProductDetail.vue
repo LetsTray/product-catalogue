@@ -1,4 +1,8 @@
-<script>
+<script></script>
+<template></template>
+
+
+<!--<script>
 import product from "../data/product.json";
 
 export default {
@@ -24,7 +28,6 @@ export default {
 };
 </script>
 <template>
-  <p>CHILD</p>
   <div v-if="product" class="content">
     <img :src="getImageURL(product.image)" alt="product image" />
     <div class="content-body">
@@ -81,4 +84,4 @@ button.add-to-cart {
   font-weight: 600;
   padding: 0.5rem;
 }
-</style>
+</style>-->
