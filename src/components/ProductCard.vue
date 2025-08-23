@@ -19,7 +19,7 @@ export default {
         $<span>{{ price }}</span>
       </p>
     </div>
-    <button class="bg-black text-white font-medium p-2" @click="$emit('add-to-cart', product)">Add To Cart</button>
+    <button class="bg-black text-white font-medium p-2">Add To Cart</button>
     <router-link
       class="decoration-0 text-base text-black font-semibold"
       :to="`/product/${id}`"
