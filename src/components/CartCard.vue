@@ -1,4 +1,6 @@
 <script>
+import { useCartStore } from "@/stores/cartStores";
+
 export default {
   props: {
     product: Object,
@@ -6,8 +8,8 @@ export default {
   setup(props) {
     const cartStores = useCartStore();
 
-    function add(id) {
-      cartStores.removeFromCart(props.id);
+    function remove() {
+      cartStores.removeFromCart(props.product.id);
     }
 
     return { cartStores, remove };
