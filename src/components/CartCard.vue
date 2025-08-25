@@ -1,4 +1,6 @@
 <script>
+import { useCartStore } from "@/stores/cartStores";
+
 export default {
   props: {
     product: Object,
@@ -6,8 +8,8 @@ export default {
   setup(props) {
     const cartStores = useCartStore();
 
-    function add(id) {
-      cartStores.removeFromCart(props.id);
+    function remove() {
+      cartStores.removeFromCart(props.product.id);
     }
 
     return { cartStores, remove };
@@ -18,6 +20,7 @@ export default {
   <div
     class="flex flex-row justify-between flex-wrap items-center border-2 border-black rounded-2xl p-6"
   >
+    <div :src=getImageURL("product.image")></div>
     <div class="flex items-center gap-16">
       <p class="text-xl font-semibold">{{ product.name }}</p>
     </div>
