@@ -17,10 +17,7 @@ export default {
     >
     <router-link class="decoration-0 text-white flex gap-3" to="/cart">
       Cart
-      <!--<span
-        class="text-white font-semibold text-sm bg-red-600 rounded-4xl p-2"
-        >{{ cartStore.cartCount }}</span
-      >-->
+      
       <p class="text-white font-semibold text-sm bg-red-600 rounded-4xl p-2">
         {{ cartStore.cartCount }}
       </p>
