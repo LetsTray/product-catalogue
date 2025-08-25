@@ -24,10 +24,7 @@ export default {
     <ProductCard
       v-for="item in products"
       :key="item.id"
-      :id="item.id"
-      :name="item.name"
-      :price="item.price"
-      :image="getImageURL(item.image)"
+      :product="{ ...item, image: getImageURL(item.image) }"
     />
   </div>
 </template>
