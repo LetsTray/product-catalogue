@@ -11,5 +11,5 @@ export default {
 };
 </script>
 <template>
-  <CartCard v-for="item in cartStores.cart" :key="item.id" :product="item" />
+  <CartCard class="flex flex-wrap gap-x-4 gap-y-8 content-center my-9 mx-9" v-for="item in cartStores.cart" :key="item.id" :product="item" />
 </template>

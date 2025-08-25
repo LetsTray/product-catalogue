@@ -12,7 +12,11 @@ export default {
       cartStores.removeFromCart(props.product.id);
     }
 
-    return { cartStores, remove };
+    function getImageURL(image) {
+      return new URL(`../assets/${image}`, import.meta.url).href;
+    }
+
+    return { cartStores, remove, getImageURL };
   },
 };
 </script>
@@ -20,8 +24,12 @@ export default {
   <div
     class="flex flex-row justify-between flex-wrap items-center border-2 border-black rounded-2xl p-6"
   >
-    <div :src=getImageURL("product.image")></div>
-    <div class="flex items-center gap-16">
+    <img
+      :src="getImageURL(product.image)"
+      alt="product image"
+      class="w-8 h-auto"
+    />
+    <div class="flex items-center gap-8">
       <p class="text-xl font-semibold">{{ product.name }}</p>
     </div>
     <p class="text-lg font-medium">
