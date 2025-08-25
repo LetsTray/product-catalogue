@@ -29,10 +29,12 @@ export default {
     class="flex flex-row border-2 border-black rounded-3xl p-8 items-center justify-evenly gap-8 m-8"
   >
     <img :src="getImageURL(product.image)" class="w-2xl" />
-    <div class="flex flex-col gap-0.5">
-      <h1 class="font-bold text-2xl">{{ product.name }}</h1>
+    <div class="flex flex-col gap-4">
+      <h1 class="font-bold text-3xl">{{ product.name }}</h1>
       <p class="text-xl">{{ product.description }}</p>
-      <p class="text-xl font-medium">{{ product.price }}</p>
+      <p class="text-xl font-medium">
+        $<span>{{ product.price }}</span>
+      </p>
     </div>
   </div>
 </template>
