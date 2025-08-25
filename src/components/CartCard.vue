@@ -2,8 +2,17 @@
 export default {
   props: {
     product: Object,
-  }
-}
+  },
+  setup(props) {
+    const cartStores = useCartStore();
+
+    function add(id) {
+      cartStores.removeFromCart(props.id);
+    }
+
+    return { cartStores, remove };
+  },
+};
 </script>
 <template>
   <div
@@ -12,9 +21,12 @@ export default {
     <div class="flex items-center gap-16">
       <p class="text-xl font-semibold">{{ product.name }}</p>
     </div>
-    <p class="text-lg font-medium">$<span>{{ product.price }}</span></p>
+    <p class="text-lg font-medium">
+      $<span>{{ product.price }}</span>
+    </p>
     <button
       class="font-medium bg-red-600 text-white border-2 rounded-2xl px-5 py-2"
+      @click="remove"
     >
       X
     </button>

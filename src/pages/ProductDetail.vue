@@ -12,9 +12,6 @@ export default {
     getImageURL(image) {
       return new URL(`../assets/${image}`, import.meta.url).href;
     },
-    tambah() {
-      this.$emit("add-to-cart", this.product);
-    },
   },
   mounted() {
     //this.product = product.finds((product) => product.id == this.id);

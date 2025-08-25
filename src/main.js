@@ -5,6 +5,10 @@ import "./style.css";
 import PrimeVue from "primevue/config";
 import { createPinia } from "pinia";
 
+const app = createApp(App);
 const pinia = createPinia();
 
-createApp(App).use(router).use(PrimeVue).mount("#app").app.use(pinia);
+app.use(router);
+app.use(PrimeVue);
+app.mount("#app");
+app.use(pinia);
