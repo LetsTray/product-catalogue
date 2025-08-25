@@ -45,6 +45,7 @@ export default {
     price: Number,
     image: String,
   },
+  emits: ["add-to-cart"],
 };
 </script>
 <template>
