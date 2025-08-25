@@ -1,5 +1,6 @@
 <script>
 import product from "../data/product.json";
+import { getImageURL } from "@/utils/getImageURL";
 
 export default {
   props: ["id"],
@@ -9,9 +10,7 @@ export default {
     };
   },
   methods: {
-    getImageURL(image) {
-      return new URL(`../assets/${image}`, import.meta.url).href;
-    },
+    getImageURL,
   },
   mounted() {
     //this.product = product.finds((product) => product.id == this.id);

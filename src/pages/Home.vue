@@ -1,6 +1,7 @@
 <script>
 import ProductCard from "@/components/ProductCard.vue";
 import product from "../data/product.json";
+import { getImageURL } from "@/utils/getImageURL";
 
 export default {
   components: { ProductCard },
@@ -10,9 +11,7 @@ export default {
     };
   },
   methods: {
-    getImageURL(image) {
-      return new URL(`../assets/${image}`, import.meta.url).href;
-    },
+    getImageURL,
   },
 };
 </script>
